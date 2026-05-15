@@ -1,1 +1,418 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performa - T-shirt Jumping Bear</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="frete">
+            <h2>FRETE GRÁTIS ACIMA DE <strong>R$199</strong></h2>
+        </div>
+
+        <nav class="navbar">
+            <img src="img/LogoPerforma.png" alt="Logo Performa" class="logo">
+
+            <ul class="menu-links">
+                <li><a href="#roupas">ROUPAS</a></li>
+                <li><a href="#sapatos">SAPATOS</a></li>
+                <li><a href="#acessorio">ACESSÓRIO</a></li>
+                <li><a href="#casacuidado">CASA E CUIDADO</a></li>
+                <li><a href="#bazar">BAZAR</a></li>
+            </ul>
+
+            <div class="acoesnav">
+                <div class="buscar">
+                    <input placeholder="Digite sua busca aqui" class="input">
+                    <i class="fi fi-rs-search"></i>
+                </div>
+                <div class="icones-usuario">
+                    <i class="fi fi-rs-user"></i>
+                    <i class="fi fi-rs-shopping-bag"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-produto">
+
+        <!-- Seção principal: fotos + informações -->
+        <div class="conteudo">
+
+            <section class="fotos-produto">
+                <div class="cards-miniaturas">
+                    <img src="img/foto_camisa.png" alt="Miniatura 1">
+                    <img src="img/foto_camisa.png" alt="Miniatura 2">
+                    <img src="img/foto_camisa.png" alt="Miniatura 3">
+                    <img src="img/foto_camisa.png" alt="Miniatura 4">
+                </div>
+                <div class="foto-principal">
+                    <img src="img/foto_camisa.png" alt="Foto principal do produto">
+                </div>
+            </section>
+
+            <section class="info-produto">
+                <h1 class="titulo-produto">T-shirt jumping bear</h1>
+                <p class="referencia">REF.: 104893</p>
+
+                <div class="container-preco">
+                    <p class="preco-antigo">De: <s>R$ 499,00</s></p>
+                    <h2 class="novo-preco">por R$ 399,90</h2>
+                    <p class="parcelamento">ou 4x de R$ 99,75</p>
+                </div>
+
+                <div class="escolha-tamanho">
+                    <div class="header-tamanho">
+                        <p>Escolha o Tamanho</p>
+                        <button class="guiamedidas">Guia de medidas</button>
+                    </div>
+                    <div class="lista-tamanhos">
+                        <span>UN</span>
+                        <span class="ativo">P</span>
+                        <span>M</span>
+                        <span>G</span>
+                        <span>GG</span>
+                        <span class="apagado">EG</span>
+                    </div>
+                </div>
+
+                <div class="escolha-cor">
+                    <p>Escolha uma cor</p>
+                    <div class="palheta">
+                        <div class="cor item-preto"></div>
+                        <div class="cor item-amarelo"></div>
+                        <div class="cor item-vermelho"></div>
+                        <div class="cor item-azul-escuro"></div>
+                        <div class="cor item-azul-claro"></div>
+                        <div class="cor item-verde"></div>
+                        <div class="cor item-marrom-claro"></div>
+                        <div class="cor item-marrom-escuro"></div>
+                        <div class="cor item-branco"></div>
+                    </div>
+                </div>
+
+                <button class="btn-comprar" onclick="handleComprar()">Comprar</button>
+
+                <div class="calculo-frete">
+                    <p>Calcular o valor do frete</p>
+                    <div class="input-grupo">
+                        <input type="text" id="cep-frete" placeholder="00000-000">
+                        <button class="btn-ok">OK</button>
+                    </div>
+                    <p class="naocep">Não sei meu CEP</p>
+                </div>
+
+                <div class="descricao">
+                    <p>Descrição e detalhes</p>
+                    <i class="fi fi-rs-plus"></i>
+                </div>
+
+                <div class="avaliacao">
+                    <div class="icones-avaliacao-blusa">
+                        <i class="fi fi-ss-star"></i>
+                        <i class="fi fi-ss-star"></i>
+                        <i class="fi fi-ss-star-half"></i>
+                        <i class="fi fi-rs-star"></i>
+                        <i class="fi fi-rs-star"></i>
+                    </div>
+                    <p class="qtd-avaliacao">30 avaliações</p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Seção de sugestões -->
+        <div class="sugestoes">
+            <h3>Você também pode gostar</h3>
+            <button class="btn-vermais">ver tudo</button>
+        </div>
+
+        <section class="cards-mini-sugestoes">
+            <div class="card-sugestao">
+                <img src="/img/blusa-verde.png" alt="T-shirt jumping bear verde">
+                <h4 class="titulo-blusa-sugestao">T-SHIRT JUMPING BEAR 104893</h4>
+                <div class="precos-sugestoes">
+                    <s class="preco-antigo-sugestao">R$299,00</s>
+                    <p class="novo-preco-sugestao">R$269,90</p>
+                </div>
+                <p class="parcelamento-sugestao">ou 3x R$159,96</p>
+            </div>
+
+            <div class="card-sugestao">
+                <img src="/img/blusa-vitrine.png" alt="T-shirt jumping bear vitrine">
+                <h4 class="titulo-blusa-sugestao">T-SHIRT JUMPING BEAR 104893</h4>
+                <div class="precos-sugestoes">
+                    <s class="preco-antigo-sugestao">R$299,00</s>
+                    <p class="novo-preco-sugestao">R$269,90</p>
+                </div>
+                <p class="parcelamento-sugestao">ou 3x R$159,96</p>
+            </div>
+
+            <div class="card-sugestao">
+                <img src="/img/foto_camisa.png" alt="T-shirt jumping bear">
+                <h4 class="titulo-blusa-sugestao">T-SHIRT JUMPING BEAR 104893</h4>
+                <div class="precos-sugestoes">
+                    <s class="preco-antigo-sugestao">R$299,00</s>
+                    <p class="novo-preco-sugestao">R$269,90</p>
+                </div>
+                <p class="parcelamento-sugestao">ou 3x R$159,96</p>
+            </div>
+
+            <div class="card-sugestao">
+                <img src="/img/casaco_azul.png" alt="Casaco azul">
+                <h4 class="titulo-blusa-sugestao">T-SHIRT JUMPING BEAR 104893</h4>
+                <div class="precos-sugestoes">
+                    <s class="preco-antigo-sugestao">R$299,00</s>
+                    <p class="novo-preco-sugestao">R$269,90</p>
+                </div>
+                <p class="parcelamento-sugestao">ou 3x R$159,96</p>
+            </div>
+
+            <div class="card-sugestao">
+                <img src="/img/blusa_branca.png" alt="Blusa branca">
+                <h4 class="titulo-blusa-sugestao">T-SHIRT JUMPING BEAR 104893</h4>
+                <div class="precos-sugestoes">
+                    <s class="preco-antigo-sugestao">R$299,00</s>
+                    <p class="novo-preco-sugestao">R$269,90</p>
+                </div>
+                <p class="parcelamento-sugestao">ou 3x R$159,96</p>
+            </div>
+        </section>
+
+        <div class="rolagem">
+            <button class="rolagem-para-lado2"></button>
+            <button class="rolagem-para-lado1"></button>
+            <button class="rolagem-para-lado3"></button>
+        </div>
+
+        <!-- Avaliações e dúvidas -->
+        <h2 class="titulo-geral">AVALIAÇÕES E DÚVIDAS <span class="mais-fino">SOBRE ESTE PRODUTO</span></h2>
+
+        <section class="comentarios">
+
+            <div class="bloco-avaliacoes">
+                <h3 class="titulo">AVALIAÇÕES</h3>
+
+                <div class="conteiner-icons-avaliacao">
+                    <div class="icones-comentarios-blusas">
+                        <i class="fi fi-ss-star"></i>
+                        <i class="fi fi-ss-star"></i>
+                        <i class="fi fi-ss-star"></i>
+                        <i class="fi fi-ss-star"></i>
+                        <i class="fi fi-ss-star-half"></i>
+                    </div>
+                    <p class="baseado-avaliacao">56 avaliações</p>
+                </div>
+
+                <div class="lista-comentarios-usuarios">
+
+                    <div class="card-comentario">
+                        <div class="item-comentario">
+                            <strong>Nome cliente</strong>
+                            <div class="icones-coment-users">
+                                <i class="fi fi-ss-star"></i>
+                                <i class="fi fi-ss-star"></i>
+                                <i class="fi fi-ss-star"></i>
+                                <i class="fi fi-ss-star"></i>
+                                <i class="fi fi-ss-star-half"></i>
+                                <p>Há 6 meses</p>
+                            </div>
+                        </div>
+                        <div class="coment-avaliacao-users">
+                            <div class="compraverificada">
+                                <i class="fi fi-ss-badge-check"></i>
+                                <p>Compra verificada</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate enim, ea ipsam a ab beatae architecto dignissimos tempora, officiis labore dolor numquam eius eaque odit magni eum id pariatur libero?</p>
+                        </div>
+                        <div class="recomend-users">
+                            <i class="fi fi-ss-badge-check"></i>
+                            <p>Sim, recomendaria este produto a um amigo</p>
+                        </div>
+                    </div>
+
+                    <div class="card-comentario">
+                        <div class="item-comentario">
+                            <strong>Nome cliente</strong>
+                            <div class="icones-coment-users">
+                                <i class="fi fi-ss-star"></i>
+                                <i class="fi fi-ss-star"></i>
+                                <i class="fi fi-ss-star"></i>
+                                <i class="fi fi-ss-star"></i>
+                                <i class="fi fi-ss-star-half"></i>
+                                <p>Há 6 meses</p>
+                            </div>
+                        </div>
+                        <div class="coment-avaliacao-users">
+                            <div class="compraverificada">
+                                <i class="fi fi-ss-badge-check"></i>
+                                <p>Compra verificada</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate enim, ea ipsam a ab beatae architecto dignissimos tempora, officiis labore dolor numquam eius eaque odit magni eum id pariatur libero?</p>
+                        </div>
+                        <div class="recomend-users">
+                            <i class="fi fi-ss-badge-check"></i>
+                            <p>Sim, recomendaria este produto a um amigo</p>
+                        </div>
+                    </div>
+
+                    <div class="card-comentario">
+                        <div class="item-comentario">
+                            <strong>Nome cliente</strong>
+                            <div class="icones-coment-users">
+                                <i class="fi fi-ss-star"></i>
+                                <i class="fi fi-ss-star"></i>
+                                <i class="fi fi-ss-star"></i>
+                                <i class="fi fi-ss-star"></i>
+                                <i class="fi fi-ss-star-half"></i>
+                                <p>Há 6 meses</p>
+                            </div>
+                        </div>
+                        <div class="coment-avaliacao-users">
+                            <div class="compraverificada">
+                                <i class="fi fi-ss-badge-check"></i>
+                                <p>Compra verificada</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate enim, ea ipsam a ab beatae architecto dignissimos tempora, officiis labore dolor numquam eius eaque odit magni eum id pariatur libero?</p>
+                        </div>
+                        <div class="recomend-users">
+                            <i class="fi fi-ss-badge-check"></i>
+                            <p>Sim, recomendaria este produto a um amigo</p>
+                        </div>
+                    </div>
+
+                    <div class="lista-paginas">
+                        <i class="fi fi-rr-angle-left"></i>
+                        <span>1</span>
+                        <span class="pag-ativo">2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <i class="fi fi-rr-angle-right"></i>
+                    </div>
+
+                    <div class="troca-de-sessao">
+                        <div class="btn-avaliar">
+                            <button>Avaliar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-duvidas">
+                <h3 class="titulo-duvidas">DÚVIDAS</h3>
+                <p class="descricao-duvidas">Tem alguma dúvida sobre o produto? Pergunte-nos!</p>
+
+                <input type="text" class="input-duvida" placeholder="Pergunte sobre o produto, como utilizá-lo ou peça alguma dica">
+                <div class="container-btn-duvida">
+                    <button class="botao-enviar-duvida">Perguntar</button>
+                </div>
+
+                <div class="duvidas-clientes">
+                    <strong>Nome do cliente</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eligendi reiciendis adipisci quis odit velit quaerat sit soluta.</p>
+                </div>
+
+                <div class="resposta-loja">
+                    <strong>Loja</strong>
+                </div>
+                <div class="comenatrio-loja">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugit natus excepturi. Harum perspiciatis dolore perferendis!</p>
+                </div>
+
+                <div class="duvidas-clientes">
+                    <strong>Nome do cliente</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eligendi reiciendis adipisci quis odit velit quaerat sit soluta.</p>
+                </div>
+
+                <div class="resposta-loja">
+                    <strong>Loja</strong>
+                </div>
+                <div class="comenatrio-loja">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugit natus excepturi. Harum perspiciatis dolore perferendis!</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+            <!-- Rodapé e informações adicionais -->
+    <footer class="rodape">
+
+        <div class="newsletter">
+            <strong>Newsletter</strong>
+            <p class="titulo-ass">Assine nossa newsletter e fique por dentro de nossas ofertas e novidades.</p>
+            <div class="input-btn">
+                 <input type="email" name="" id="input-email" placeholder="Informe seu Email" >
+                 <button class="btn-enviar-email">ENVIAR</button>
+            </div>
+           
+        </div>
+
+
+
+        <div class="sobre">
+            <strong>Sobre</strong>
+            <p>Quem somos</p>
+            <p>Onde encontrar</p>
+            <p>Blog</p>
+        </div>
+
+
+        <div class="ajuda">
+            <strong>Ajuda</strong>
+            <p>Pedidos</p>
+            <p>Troca e devoluções</p>
+            <p>Faq</p>
+            <p>Revenda</p>
+        </div>
+        
+
+        <div class="redes-socias">
+            <strong>Redes sociais </strong>
+            <div class="icones-redes-socias">
+                <!-- Facebook -->
+                <i class="fi fi-brands-facebook"></i></a>
+                
+
+                <!-- Instagram -->
+                <i class="fi fi-brands-instagram"></i></a>
+
+
+                <!-- Spotify -->
+                <i class="fi fi-brands-spotify"></i></a>
+            </div>
+        </div>
+
+
+
+        <div class="seguranca">
+            <strong>Segurança</strong>
+            <div class="imagens-seguranca">
+                <img src="img/img-premio-rodape.png" alt="imagem de premio">
+                <img src="img/img-lojaconfiavel-rodape.png" alt="imagem loja confiavel">
+            </div>
+        </div>
+    </footer>
+    <div class="rodape-finalizacao">
+            <p> <strong>HERMOSO COMPADRE CONFECÇÃO LTDA </strong>- CNPJ 12.069.071/0001-20 | RUA ANTÔNIO ALVES TAVEIRA, 2160 - VILA TÓTOLI, FRANCA-SP - CEP 14409-123</p>
+            <p>Tecnologia: <strong> VTEX</strong></p>
+        </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

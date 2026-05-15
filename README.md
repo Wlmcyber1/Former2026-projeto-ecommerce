@@ -23,7 +23,7 @@ Este é um projeto de desenvolvimento front-end realizado como o primeiro desafi
 
 ## Clone este repositorio
 * git clone [https://github.com/Wlmcyber1/Former2026-projeto-ecommerce.git]
-2. Abra o arquivo `index.html` no seu navegador de preferência.
+* Abra o arquivo `index.html` no seu navegador de preferência.
 
 
 

@@ -37,4 +37,4 @@ Este é um projeto de desenvolvimento front-end realizado como o primeiro desafi
 
 ```
 ---
-**Projeto desenvolvido para fins educacionais durante o programa Former 2026 (Performa IT).**
+**Projeto desenvolvido para fins educacionais durante o programa Forma 2026 (Performa IT).**

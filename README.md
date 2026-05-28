@@ -1,6 +1,6 @@
 # 🐻 Performa E-commerce - T-Shirt Jumping Bear
 
-Este é um projeto de desenvolvimento front-end realizado como o primeiro desafio prático no programa **Former 2026**, em parceria com a **Performa IT**. O objetivo foi replicar uma página de produto de um e-commerce real, focando em semântica HTML e estilização avançada com CSS.
+Este é um projeto de desenvolvimento front-end realizado como o primeiro desafio prático no programa **Forma 2026**, em parceria com a **Performa IT**. O objetivo foi replicar uma página de produto de um e-commerce real, focando em semântica HTML e estilização avançada com CSS.
 
 ## 🚀 Tecnologias Utilizadas
 

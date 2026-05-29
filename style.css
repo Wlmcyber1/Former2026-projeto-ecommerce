@@ -644,7 +644,8 @@ body {
     background-color: #f8f7f7;
     padding: 20px ;
     gap: 7rem;
-    
+    justify-content: center;
+  width: 100%;
     
 
 }
